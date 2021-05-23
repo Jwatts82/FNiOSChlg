@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    var items = [FeedItem]()
+
     @IBOutlet weak var tableview: UITableView!
     
     
