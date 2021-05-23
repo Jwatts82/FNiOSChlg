@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     let mc = MockClient()
 
+//    @IBOutlet weak var tableview: UITableView!
+    
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -23,12 +25,19 @@ class ViewController: UIViewController {
         tableview.reloadData()
         
     }
-
-    @IBAction func RefreshListView() {
+    
+    
+    @IBAction func RefreshListView(_ sender: Any) {
         
         items = mc.getFeed()
         tableview.reloadData()
     }
+    
+    //    @IBAction func RefreshListView() {
+//
+////        items = MockClient.getFeed()
+////        tableview.reloadData()
+//    }
     
 }
 
