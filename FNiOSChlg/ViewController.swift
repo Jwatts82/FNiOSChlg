@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     var items = [FeedItem]()
     
     let mc = MockClient()
-
-//    @IBOutlet weak var tableview: UITableView!
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -32,12 +30,6 @@ class ViewController: UIViewController {
         items = mc.getFeed()
         tableview.reloadData()
     }
-    
-    //    @IBAction func RefreshListView() {
-//
-////        items = MockClient.getFeed()
-////        tableview.reloadData()
-//    }
     
 }
 

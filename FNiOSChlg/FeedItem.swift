@@ -19,5 +19,5 @@ public struct FeedItem {
     
     public let style: Style
     public let headline: String
-//        public let image: String?
+//    public let image: String?
 }
