@@ -32,3 +32,35 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell :UITableViewCell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = items[indexPath.row].headline
+        
+        switch items[indexPath.row].style {
+        case .bigTop:
+            cell.backgroundColor = .red
+        case .river:
+            cell.backgroundColor = .blue
+        case .ad:
+            cell.backgroundColor = .green
+        case .houseAd:
+            cell.backgroundColor = .orange
+        case .slideshow:
+            cell.backgroundColor = .purple
+        default:
+            break
+        }
+        
+        
+        
+        return cell
+    }
+    
+    
+}
+
