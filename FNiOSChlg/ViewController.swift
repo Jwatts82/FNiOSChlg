@@ -10,18 +10,25 @@ import UIKit
 class ViewController: UIViewController {
 
     var items = [FeedItem]()
+    
+    let mc = MockClient()
 
     @IBOutlet weak var tableview: UITableView!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableview.delegate = self
+        tableview.dataSource = self
+        items = mc.getFeed()
+        tableview.reloadData()
+        
     }
 
-
+    @IBAction func RefreshListView() {
+        
+        items = mc.getFeed()
+        tableview.reloadData()
+    }
+    
 }
 

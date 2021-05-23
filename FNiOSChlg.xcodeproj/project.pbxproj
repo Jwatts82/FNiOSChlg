@@ -17,6 +17,9 @@
 		DB44731E265ACB4800230978 /* FNiOSChlgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44731D265ACB4800230978 /* FNiOSChlgUITests.swift */; };
 		DB44732C265ACC3E00230978 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44732B265ACC3E00230978 /* FeedItem.swift */; };
 		DB44732D265ACC5A00230978 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44732B265ACC3E00230978 /* FeedItem.swift */; };
+		DB447332265ACE0D00230978 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB447331265ACE0D00230978 /* MockClient.swift */; };
+		DB447333265ACE0D00230978 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB447331265ACE0D00230978 /* MockClient.swift */; };
+		DB447334265ACE8300230978 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB447331265ACE0D00230978 /* MockClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		DB44731D265ACB4800230978 /* FNiOSChlgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNiOSChlgUITests.swift; sourceTree = "<group>"; };
 		DB44731F265ACB4800230978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB44732B265ACC3E00230978 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		DB447331265ACE0D00230978 /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				DB447306265ACB4700230978 /* LaunchScreen.storyboard */,
 				DB447309265ACB4700230978 /* Info.plist */,
 				DB44732B265ACC3E00230978 /* FeedItem.swift */,
+				DB447331265ACE0D00230978 /* MockClient.swift */,
 			);
 			path = FNiOSChlg;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB447332265ACE0D00230978 /* MockClient.swift in Sources */,
 				DB44732C265ACC3E00230978 /* FeedItem.swift in Sources */,
 				DB447300265ACB4600230978 /* ViewController.swift in Sources */,
 				DB4472FC265ACB4600230978 /* AppDelegate.swift in Sources */,
@@ -273,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB447333265ACE0D00230978 /* MockClient.swift in Sources */,
 				DB44732D265ACC5A00230978 /* FeedItem.swift in Sources */,
 				DB447313265ACB4800230978 /* FNiOSChlgTests.swift in Sources */,
 			);
@@ -282,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB447334265ACE8300230978 /* MockClient.swift in Sources */,
 				DB44731E265ACB4800230978 /* FNiOSChlgUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
